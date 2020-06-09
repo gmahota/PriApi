@@ -15,6 +15,10 @@ namespace PriApi.Model.Helper
 
         public string Document { get; set; }
 
+        public string Type { get; set; }
+
         public string FullSearch { get; set; }
+
+        public string Reference { get; set; }
     }
 }

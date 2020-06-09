@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PriApi.Data;
@@ -12,6 +13,7 @@ using PriApi.Services;
 
 namespace PriApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class InvoiceController : ControllerBase
@@ -25,9 +27,8 @@ namespace PriApi.Controllers
 
         // GET: api/Invoice
         [HttpGet]
-        public IActionResult Get()
-        {
-            InvoiceParams parmas = new InvoiceParams();
+        public IActionResult Get([FromBody] InvoiceParams parmas)
+        {            
             var invoices = _invoice.GetAllAsync(parmas);
             
             return Ok(invoices);

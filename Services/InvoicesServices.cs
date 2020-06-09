@@ -32,10 +32,48 @@ namespace PriApi.Services
                 Data as Date";
 
                 string joins = "";
+                string filtros = "";                
+
+                if(productParams.DateBegin != null && productParams.DateEnd != null)
+                {
+                    filtros = string.Format(" Data between '{0}' and '{1}'",
+                        productParams.DateBegin.ToString("yyyy-MM-dd"),
+                        productParams.DateEnd.ToString("yyyy-MM-dd")
+                    );
+                }
+
+                if (productParams.Document != null && productParams.Document.Length > 0)
+                {
+                    filtros = filtros.Length == 0 ? "" : filtros + " and ";
+
+                    filtros += string.Format("Documento = '{0}' ", productParams.Document);
+                }
+
+                if (productParams.Entity != null && productParams.Entity.Length > 0)
+                {
+                    filtros = filtros.Length == 0 ? "" : filtros + " and ";
+
+                    filtros += string.Format("Entidade = '{0}' ", productParams.Entity);
+                }
+
+                if (productParams.Type != null && productParams.Type.Length > 0)
+                {
+                    filtros = filtros.Length == 0 ? "" : filtros + " and ";
+
+                    filtros += string.Format("TipoDoc = '{0}' ", productParams.Type);
+                }
+
+                if (productParams.Reference != null && productParams.Reference.Length > 0)
+                {
+                    filtros = filtros.Length == 0 ? "" : filtros + " and ";
+
+                    filtros += string.Format("Referencia = '{0}' or Requisicao ='{0}' ", 
+                        productParams.Reference);
+                }
 
                 DBPrimavera db = new DBPrimavera(_Primavera.ConnString);
 
-                DataTable dt = db.daListaTabela("CabecDoc", 500, campos, "", "", "data desc");
+                DataTable dt = db.daListaTabela("CabecDoc", 500, campos, filtros, "", "data desc");
 
                 List<Invoice> invoices = new List<Invoice>();
 
