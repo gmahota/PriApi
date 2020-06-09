@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5vvESfgjlallSIF+JNFzi/bvMKv9eIUS7HZwylt2E197i1QjIH5qDMzmvq4GVPfzMdEZUaDxCQTR/VxgkCjcFg==",
+  "dgSpecHash": "iPZq6XQervNy6w69dqQheF0z5oo4yjd5t34wiST2vhgCfu7x2t+64feG4PvqOgZRxAWa79tRYfNMye3xtBRg6g==",
   "success": true,
-  "projectFilePath": "C:\\Mahota\\Source\\DotNet\\PriApi\\PriApi\\PriApi.csproj",
+  "projectFilePath": "C:\\Mahota\\Source\\DotNet\\PriApi\\src\\PriApi\\src\\PriApi\\PriApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gmahota\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.4\\microsoft.aspnetcore.authentication.jwtbearer.3.1.4.nupkg.sha512",
     "C:\\Users\\gmahota\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

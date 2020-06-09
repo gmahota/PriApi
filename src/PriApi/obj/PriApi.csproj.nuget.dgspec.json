@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Mahota\\Source\\DotNet\\PriApi\\PriApi\\PriApi.csproj": {}
+    "C:\\Mahota\\Source\\DotNet\\PriApi\\src\\PriApi\\src\\PriApi\\PriApi.csproj": {}
   },
   "projects": {
-    "C:\\Mahota\\Source\\DotNet\\PriApi\\PriApi\\PriApi.csproj": {
+    "C:\\Mahota\\Source\\DotNet\\PriApi\\src\\PriApi\\src\\PriApi\\PriApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Mahota\\Source\\DotNet\\PriApi\\PriApi\\PriApi.csproj",
+        "projectUniqueName": "C:\\Mahota\\Source\\DotNet\\PriApi\\src\\PriApi\\src\\PriApi\\PriApi.csproj",
         "projectName": "PriApi",
-        "projectPath": "C:\\Mahota\\Source\\DotNet\\PriApi\\PriApi\\PriApi.csproj",
+        "projectPath": "C:\\Mahota\\Source\\DotNet\\PriApi\\src\\PriApi\\src\\PriApi\\PriApi.csproj",
         "packagesPath": "C:\\Users\\gmahota\\.nuget\\packages\\",
-        "outputPath": "C:\\Mahota\\Source\\DotNet\\PriApi\\PriApi\\obj\\",
+        "outputPath": "C:\\Mahota\\Source\\DotNet\\PriApi\\src\\PriApi\\src\\PriApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gmahota\\AppData\\Roaming\\NuGet\\NuGet.Config",
