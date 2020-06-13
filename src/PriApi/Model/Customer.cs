@@ -9,5 +9,11 @@ namespace PriApi.Model
 
         [JsonProperty("name")]
         public string Name { get; set; }
+
+        [JsonProperty("discount")]
+        public double Discount { get; set; }
+
+        [JsonProperty("typePrice")]
+        public string TypePrice { get; set; }
     }
 }

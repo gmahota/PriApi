@@ -40,6 +40,8 @@ namespace PriApi
 
             // Add DI for Dotnetdesk
             services.AddTransient<IInvoicesServices, InvoicesServices>();
+            services.AddTransient<ICustomerServices, CustomerServices>();
+            services.AddTransient<IProductServices, ProductServices>();
 
             services.Configure<Primavera>(Configuration.GetSection("Primavera"));
 

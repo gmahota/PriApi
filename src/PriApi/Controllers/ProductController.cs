@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using PriApi.Data;
-using PriApi.Model;
+using PriApi.Helpers;
 using PriApi.Model.Helper;
 using PriApi.Services;
 
@@ -16,30 +14,32 @@ namespace PriApi.Controllers
     [Authorize]
     [Route("api/[controller]")]
     [ApiController]
-    public class InvoiceController : ControllerBase
+    public class ProductController : ControllerBase
     {
-        private readonly IInvoicesServices _invoice;
+        private readonly IProductServices _customer;
 
-        public InvoiceController(IInvoicesServices invoice)
+        public ProductController(IProductServices customer)
         {
-            _invoice = invoice;
+            _customer = customer;
         }
 
         // GET: api/Invoice
         [HttpGet]
-        public IActionResult Get([FromBody] InvoiceParams parmas)
-        {            
-            var invoices = _invoice.GetAllAsync(parmas);
-            
+        public IActionResult Get([FromBody] ProductParams parmas)
+        {
+            var invoices = _customer.GetAllAsync(parmas);
+
             return Ok(invoices);
         }
 
 
         // GET: api/Invoice/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public IActionResult Get(string id)
         {
-            return "value";
+            var customer = _customer.GetByCodeAsync(id);
+
+            return Ok(customer);
         }
 
         // POST: api/Invoice
