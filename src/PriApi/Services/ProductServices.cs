@@ -103,7 +103,7 @@ namespace PriApi.Services
             try
             {
                 string campos = @"
-                    select A.Artigo as Code, A.Descricao as [Description] , 
+                    A.Artigo as Code, A.Descricao as [Description] , 
                         am.PVP1,am.PVP2,am.PVP3,am.PVP4,am.pvp5,am.PVP6
                 ";
 
