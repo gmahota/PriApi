@@ -8,9 +8,12 @@ namespace PriApi.Entities
 {
     public class User
     {
+        [JsonIgnore]
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+
+        [JsonIgnore]
         public string Username { get; set; }
 
         [JsonIgnore]

@@ -124,7 +124,6 @@ C:\Mahota\Source\DotNet\PriApi\src\PriApi\bin\x86\Release\netcoreapp3.1\runtimes
 C:\Mahota\Source\DotNet\PriApi\src\PriApi\bin\x86\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Mahota\Source\DotNet\PriApi\src\PriApi\bin\x86\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Mahota\Source\DotNet\PriApi\src\PriApi\bin\x86\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Mahota\Source\DotNet\PriApi\src\PriApi\obj\x86\Release\netcoreapp3.1\PriApi.csprojAssemblyReference.cache
 C:\Mahota\Source\DotNet\PriApi\src\PriApi\obj\x86\Release\netcoreapp3.1\PriApi.csproj.CoreCompileInputs.cache
 C:\Mahota\Source\DotNet\PriApi\src\PriApi\obj\x86\Release\netcoreapp3.1\PriApi.MvcApplicationPartsAssemblyInfo.cache
 C:\Mahota\Source\DotNet\PriApi\src\PriApi\obj\x86\Release\netcoreapp3.1\PriApi.AssemblyInfoInputs.cache

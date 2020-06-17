@@ -31,7 +31,14 @@ namespace PriApi.Controllers
             if (user == null)
                 return BadRequest(new { message = "Username or password is incorrect" });
 
-            return Ok(user);
+            var userP = new User
+            {
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                Token = user.Token
+            };
+
+            return Ok(userP);
         }
 
         [HttpGet]
